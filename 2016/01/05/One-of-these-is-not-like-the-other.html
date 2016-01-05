@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>One of these is not like the other...</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html" />
+    
+    <meta property="og:site_name" content="Javascript Muse" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="One of these is not like the other..." />
+    <meta property="og:description" content="Comparing Differecnce in Two Arrays At our meetup Saturday, Kiley Dowling pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world..." />
+    <meta property="og:url" content="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html" />
+    <meta property="article:published_time" content="2016-01-05T05:00:00.000Z" />
+    <meta property="article:modified_time" content="2016-01-05T07:24:59.725Z" />
+    <meta property="article:tag" content="Pair Programming" />
+    <meta property="article:tag" content="blackGirlsCode(2)" />
+    <meta property="article:tag" content="Javascript" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="One of these is not like the other..." />
+    <meta name="twitter:description" content="Comparing Differecnce in Two Arrays At our meetup Saturday, Kiley Dowling pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world..." />
+    <meta name="twitter:url" content="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Javascript Muse",
+    "author": {
+        "@type": "Person",
+        "name": "E.D.M.",
+        "image": "https://avatars.githubusercontent.com/u/12376362?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "https://www.ericamitchellonline.com"
+    },
+    "headline": "One of these is not like the other...",
+    "url": "https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html",
+    "datePublished": "2016-01-05T05:00:00.000Z",
+    "dateModified": "2016-01-05T07:24:59.725Z",
+    "keywords": "Pair Programming,  blackGirlsCode(2),  Javascript",
+    "description": "Comparing Differecnce in Two Arrays At our meetup Saturday, Kiley Dowling pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Javascript Muse" href="https://DuggieMitchell.github.io/JavascriptMuse/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Pair-Programming tag-blackGirlsCode2 tag-Javascript">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://DuggieMitchell.github.io/JavascriptMuse">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://DuggieMitchell.github.io/JavascriptMuse/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Pair-Programming tag-blackGirlsCode2 tag-Javascript">
+
+        <header class="post-header">
+            <h1 class="post-title">One of these is not like the other...</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-01-05">05 January 2016</time>  on <a href="https://DuggieMitchell.github.io/JavascriptMuse/tag/Pair-Programming">Pair Programming</a>, <a href="https://DuggieMitchell.github.io/JavascriptMuse/tag/blackGirlsCode2"> blackGirlsCode(2)</a>, <a href="https://DuggieMitchell.github.io/JavascriptMuse/tag/Javascript"> Javascript</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect2">
+<h3 id="_comparing_differecnce_in_two_arrays">Comparing Differecnce in Two Arrays</h3>
+<div class="paragraph">
+<p>At our meetup Saturday, <a href="url:https://linkedin.com">Kiley Dowling</a> pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world example of coding in the wild. The particular challenge of the day was to create function comparing two arrays with different values, and returning a new array containing unique values.</p>
+</div>
+<div class="paragraph">
+<p>My working solution was close, but not quite returning the right answer. Here is the function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-Javascript" data-lang="Javascript">    function diff (arr1, arr2) {
+      var newArr = [];
+      return newArr;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The solution I created before meeting today used the filter() and indexOf() and while on some level filtering the function, the results were not quite what I was hoping for:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-Javascript" data-lang="Javascript">    function diff (arr1, arr2) {
+        var newArr = arr1.concat(arr2);
+        console.log(newArr);
+          //Outputs [1, 2, 3, 5, 1, 2, 3, 4, 5]
+        var filteredArr = newArr.filter(function(elem, pos) {
+        return newArr.indexOf(elem) === pos;
+      })
+        console.log(filteredArr);
+        //Outputs [1, 2, 3, 5, 4]
+      }
+      diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>filter() is an array callback function that takes three arguments:</p>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>the value of the index</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>the index argument</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>the Array object.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This was returning an array minus duplicates. Why? Because by concating the two arrays first, there is no comparison done. I knew it was likely an important step to concat the arrays for better comparison, but my naivity on how indexOf() actually works would explain my error. The Array being traversed is not augmented, rather a new array is created with elements that returns a true value.</p>
+</div>
+<div class="paragraph">
+<p>indexOf() is a method of the Array object that returns the index of the first occurence of the specified value, or -1 if not found.</p>
+</div>
+<div class="paragraph">
+<p>So a better solution would be to filter the arrays seperately and concat their return values:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>function diff(arr1, arr2) {
+  var newArr = arr1.filter(function(elem) {
+    return arr2.indexOf(elem) === -1;
+    //returns an empty array since arr1 has the same elements of arr2
+  }).concat(arr2.filter(function(elem) {
+    return arr1.indexOf(elem) === -1;
+    //returns array that has elements that equal false and then concates that value to newArray
+}));
+    return newArr;
+}</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>diff([1, 2, 3, 5], [1, 2, 3, 4, 5]); //Outputs [4];</pre>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/12376362?v=3)"><span class="hidden">E.D.M.'s Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">E.D.M.</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Charlotte, NC</span>
+                    <span class="author-link icon-link"><a href="https://www.ericamitchellonline.com">https://www.ericamitchellonline.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=One%20of%20these%20is%20not%20like%20the%20other...&amp;url=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/One-of-these-is-not-like-the-other.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://DuggieMitchell.github.io/JavascriptMuse">Javascript Muse</a> &copy; 2016</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
