@@ -1,7 +1,8 @@
 = One of these is not like the other...
 :hp-tags: Pair Programming, blackGirlsCode(2), Javascript
+:hp-images: http://static.fjcdn.com/pictures/1+of+these+things+is+not+like+the+other+is_38e2d4_4453897.jpg
 
-=== Comparing Differecnce in Two Arrays
+=== Comparing Difference in Two Arrays
 At our meetup Saturday, link:url:https://linkedin.com[Kiley Dowling] pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world example of coding in the wild. The particular challenge of the day was to create function comparing two arrays with different values, and returning a new array containing unique values.
 
 My working solution was close, but not quite returning the right answer. Here is the function:
