@@ -2,4 +2,72 @@
 :hp-image: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL
 :hp-tags: Javascript, Shakespeare
 
+:hp-image: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL
+:hp-tags: Javascript, Shakespeare
+
+== Working with Objects in Javascript
+
+____
+What is in a name that which we call a rose by any other name would smell as sweet?
+____
+
+Each time I get a handle on Javascript concepts, low and behold, something new is presented which, luckily, builds on previous challenges.  This challenge introduced associative arrays, which is an an abstract data type made of a collection of key:value pairs.  Keys are sometimes referred to as _name_, or in other languages, a _hash_.  
+
+You may have heard that everything in Javascript is an object, which true... kinda.  Javascripts design is one of a simple object-based paradigm.  Objects can be compared to real-life things such as shoes:  They have properties such as size, color, a specific designer.  Javascript in the same also have properties that define who they are and what they do.  
+
+Values such as Booleans, Numbers and Strings are _primitive_ values -  in other words, not objects.  But what you will find is sometimes they are.  That is the beauty of a loosely typed language like Javascript.  But on the flip side, because the language is so forgiving, it can get you, dear programmer, in trouble.
+
+Below, we are to create a function that takes in two arguments and iterates through an array of objects (first argument) and returns an array with matching properties and values pairs of the second argument.  The property and value of the `source` object must be present in the `collection` object in order to be included in the returned array.  
+
+Given these variables: 
+
+[source, javascript]
+----
+
+var collection = [  { first: "Romeo", last: "Montague" },
+                    { first: "Mercutio", last: null }, 
+                    { first: "Tybalt", last: "Capulet" } ];
+
+var source = [{last: "Capulet"}];
+
+----
+
+The third object from the `collection` argument  `[{last: "Capulet"}]` should be returned as a new Array as it has the that property-value pair as the second argument.
+
+----
+obj.hasOwnProperty(prop)
+----
+
+Returns a boolean (`true`, `false`) depending on whether the object has the specified property. 
+----
+Object.keys(obj)
+----
+Returns an new array composed of the Object's enumerable properties in the same order as a `for...in loop` would, without checking down the prototype chain.
+
+How this differs from the in operator is this method does not do a check through the objects prototype chain.  Using these two methods, along with `filter()` and `every()` I was able to successfully compose the function:
+
+[source, javascript]
+----
+function where(collection, source) {
+  var sourceKeys = Object.keys(source); 
+    return collection.filter(function (obj) {   # <1>
+      return sourceKeys.every(function (key) {  # <2>
+        return obj.hasOwnProperty(key) && obj[key] === source[key];  # <3>
+  });
+}
+  
+
+where ( [ { first: "Romeo", last: "Montague" }, { first: "Mercutio",last: null }, { first: "Tybalt", last: 			"Capulet"}],  { last: "Capulet" ] } );
+
+	
+console.log(sourceKeys); //outputs ["last"]
+
+----
+<1>  filter through the `collection` obj return an new array of values the callback finds is `true` +
+<2> `Every()` method executes the callback function in the new array until it finds a `false` value. +
+<3> `obj.hasOwnProperty()` returns objects whose `keys` match those equal to `source[key]`.
+
+
+I hope this succinctly explains what is going on with the above function.  The most challenging part for me with using higher order functions is syntax;  knowing when and where to chain functions together to get the appropriate solution.
+			
 
