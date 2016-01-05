@@ -1,0 +1,4 @@
+= Hello There!
+:hp-tags: Welcome, Blog
+
+This is my new awsome blog
