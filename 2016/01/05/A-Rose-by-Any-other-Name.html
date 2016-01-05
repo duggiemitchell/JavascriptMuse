@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>A Rose by Any other Name</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html" />
+    
+    <meta property="og:site_name" content="Javascript Muse" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Rose by Any other Name" />
+    <meta property="og:description" content="Working with Objects in Javascript What is in a name that which we call a rose by any other name would smell as sweet? Each time I get a handle on Javascript concepts, low and behold, something new is presented..." />
+    <meta property="og:url" content="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html" />
+    <meta property="og:image" content="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL" />
+    <meta property="article:published_time" content="2016-01-05T05:00:00.000Z" />
+    <meta property="article:modified_time" content="2016-01-05T14:29:22.564Z" />
+    <meta property="article:tag" content="Javascript" />
+    <meta property="article:tag" content="Shakespeare" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A Rose by Any other Name" />
+    <meta name="twitter:description" content="Working with Objects in Javascript What is in a name that which we call a rose by any other name would smell as sweet? Each time I get a handle on Javascript concepts, low and behold, something new is presented..." />
+    <meta name="twitter:url" content="https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html" />
+    <meta name="twitter:image:src" content="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Javascript Muse",
+    "author": {
+        "@type": "Person",
+        "name": "E.D.M.",
+        "image": "https://avatars.githubusercontent.com/u/12376362?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "https://www.ericamitchellonline.com"
+    },
+    "headline": "A Rose by Any other Name",
+    "url": "https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html",
+    "datePublished": "2016-01-05T05:00:00.000Z",
+    "dateModified": "2016-01-05T14:29:22.564Z",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL",
+    "keywords": "Javascript,  Shakespeare",
+    "description": "Working with Objects in Javascript What is in a name that which we call a rose by any other name would smell as sweet? Each time I get a handle on Javascript concepts, low and behold, something new is presented..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Javascript Muse" href="https://DuggieMitchell.github.io/JavascriptMuse/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Javascript tag-Shakespeare">
+
+    
+
+
+<header class="main-header post-head " style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0gh6a7iYAQajG5OLuMApXiR62XXoyElXXZP2ReQkXZNMC9PmL)">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button icon-arrow-left" href="https://DuggieMitchell.github.io/JavascriptMuse">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://DuggieMitchell.github.io/JavascriptMuse/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Javascript tag-Shakespeare">
+
+        <header class="post-header">
+            <h1 class="post-title">A Rose by Any other Name</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-01-05">05 January 2016</time>  on <a href="https://DuggieMitchell.github.io/JavascriptMuse/tag/Javascript">Javascript</a>, <a href="https://DuggieMitchell.github.io/JavascriptMuse/tag/Shakespeare"> Shakespeare</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect1">
+<h2 id="_working_with_objects_in_javascript">Working with Objects in Javascript</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>What is in a name that which we call a rose by any other name would smell as sweet?</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Each time I get a handle on Javascript concepts, low and behold, something new is presented which, luckily, builds on previous challenges.  This challenge introduced associative arrays, which is an an abstract data type made of a collection of key:value pairs.  Keys are sometimes referred to as <em>name</em>, or in other languages, a <em>hash</em>.</p>
+</div>
+<div class="paragraph">
+<p>You may have heard that everything in Javascript is an object, which true&#8230;&#8203; kinda.  Javascripts design is one of a simple object-based paradigm.  Objects can be compared to real-life things such as shoes:  They have properties such as size, color, a specific designer.  Javascript in the same also have properties that define who they are and what they do.</p>
+</div>
+<div class="paragraph">
+<p>Values such as Booleans, Numbers and Strings are <em>primitive</em> values -  in other words, not objects.  But what you will find is sometimes they are.  That is the beauty of a loosely typed language like Javascript.  But on the flip side, because the language is so forgiving, it can get you, dear programmer, in trouble.</p>
+</div>
+<div class="paragraph">
+<p>Below, we are to create a function that takes in two arguments and iterates through an array of objects (first argument) and returns an array with matching properties and values pairs of the second argument.  The property and value of the <code>source</code> object must be present in the <code>collection</code> object in order to be included in the returned array.</p>
+</div>
+<div class="paragraph">
+<p>Given these variables:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">var collection = [  { first: "Romeo", last: "Montague" },
+                    { first: "Mercutio", last: null },
+                    { first: "Tybalt", last: "Capulet" } ];
+
+var source = [{last: "Capulet"}];</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The third object from the <code>collection</code> argument  <code>[{last: "Capulet"}]</code> should be returned as a new Array as it has the that property-value pair as the second argument.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>obj.hasOwnProperty(prop)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Returns a boolean (<code>true</code>, <code>false</code>) depending on whether the object has the specified property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Object.keys(obj)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Returns an new array composed of the Object&#8217;s enumerable properties in the same order as a <code>for&#8230;&#8203;in loop</code> would, without checking down the prototype chain.</p>
+</div>
+<div class="paragraph">
+<p>How this differs from the in operator is this method does not do a check through the objects prototype chain.  Using these two methods, along with <code>filter()</code> and <code>every()</code> I was able to successfully compose the function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">function where(collection, source) {
+  var sourceKeys = Object.keys(source);
+    return collection.filter(function (obj) {   <i class="conum" data-value="1"></i><b>(1)</b>
+      return sourceKeys.every(function (key) {  <i class="conum" data-value="2"></i><b>(2)</b>
+        return obj.hasOwnProperty(key) &amp;&amp; obj[key] === source[key];  <i class="conum" data-value="3"></i><b>(3)</b>
+  });
+}
+
+
+where ( [ { first: "Romeo", last: "Montague" }, { first: "Mercutio",last: null }, { first: "Tybalt", last: 			"Capulet"}],  { last: "Capulet" ] } );
+
+
+console.log(sourceKeys); //outputs ["last"]</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>filter through the <code>collection</code> obj return an new array of values the callback finds is <code>true</code><br></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>Every()</code> method executes the callback function in the new array until it finds a <code>false</code> value.<br></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>obj.hasOwnProperty()</code> returns objects whose <code>keys</code> match those equal to <code>source[key]</code>.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>I hope this succinctly explains what is going on with the above function.  The most challenging part for me with using higher order functions is syntax;  knowing when and where to chain functions together to get the appropriate solution.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/12376362?v=3)"><span class="hidden">E.D.M.'s Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">E.D.M.</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Charlotte, NC</span>
+                    <span class="author-link icon-link"><a href="https://www.ericamitchellonline.com">https://www.ericamitchellonline.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=A%20Rose%20by%20Any%20other%20Name&amp;url=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://DuggieMitchell.github.io/JavascriptMuse/2016/01/05/A-Rose-by-Any-other-Name.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://DuggieMitchell.github.io/JavascriptMuse">Javascript Muse</a> &copy; 2016</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//DuggieMitchell.github.io/JavascriptMuse/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
