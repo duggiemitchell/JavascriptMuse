@@ -1,0 +1,55 @@
+= One of these is not like the other...
+:hp-tags: Pair Programming, blackGirlsCode(2), Javascript
+
+=== Comparing Differecnce in Two Arrays
+At our meetup Saturday, link:url:https://linkedin.com[Kiley Dowling] pair programmed with me and it was…​ different. But I’ve heard having someone peek over your shoulder whilst solving an algorithm is both helpful and a real world example of coding in the wild. The particular challenge of the day was to create function comparing two arrays with different values, and returning a new array containing unique values.
+
+My working solution was close, but not quite returning the right answer. Here is the function:
+[source, Javascript]
+----
+    function diff (arr1, arr2) {
+      var newArr = [];
+      return newArr;
+    }
+----    
+The solution I created before meeting today used the filter() and indexOf() and while on some level filtering the function, the results were not quite what I was hoping for:
+[source, Javascript]
+----
+    function diff (arr1, arr2) {
+        var newArr = arr1.concat(arr2);
+        console.log(newArr);
+          //Outputs [1, 2, 3, 5, 1, 2, 3, 4, 5]
+        var filteredArr = newArr.filter(function(elem, pos) {
+        return newArr.indexOf(elem) === pos;
+      })
+        console.log(filteredArr);
+        //Outputs [1, 2, 3, 5, 4]
+      }
+      diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+----
+filter() is an array callback function that takes three arguments:
+
+<1>  the value of the index
+
+<2>  the index argument
+
+<3>  the Array object. 
+
+This was returning an array minus duplicates. Why? Because by concating the two arrays first, there is no comparison done. I knew it was likely an important step to concat the arrays for better comparison, but my naivity on how indexOf() actually works would explain my error. The Array being traversed is not augmented, rather a new array is created with elements that returns a true value.
+
+indexOf() is a method of the Array object that returns the index of the first occurence of the specified value, or -1 if not found.
+
+So a better solution would be to filter the arrays seperately and concat their return values:
+
+    function diff(arr1, arr2) {
+      var newArr = arr1.filter(function(elem) {
+        return arr2.indexOf(elem) === -1;
+        //returns an empty array since arr1 has the same elements of arr2
+      }).concat(arr2.filter(function(elem) {
+        return arr1.indexOf(elem) === -1;
+        //returns array that has elements that equal false and then concates that value to newArray
+    }));
+        return newArr;
+    }
+
+    diff([1, 2, 3, 5], [1, 2, 3, 4, 5]); //Outputs [4];
