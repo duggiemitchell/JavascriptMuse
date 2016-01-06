@@ -2,15 +2,17 @@
 :hp-image: https://lh3.googleusercontent.com/KPzSutUvsP8_V3A7F5eP-BB7dYAWpKyKfBHXiwRH8ntQaMKrjqWewXAjW-riM93n1xtJOGyiQR4Ssqg3diLg2WtA_sI3mvn4DvyujVVz1-WcpD-7IVN8h9PiXrzan4APp1UCLFPdFSAOXPY5qBazcs5usUu-zoTInnXabMCdauOyFWXxUPTiyrezGXenOVF77gmSmQg5ExazzfSU5o752bphlZVfzks34SNvwV71EeWnrrfaf9h20PatUd7uQKuPOcAkHFDwRFEqn1_mLJgdDHAm57Hcb8-1P4CZbB-3XZ1jHpuLllxs-uMrPWtkRB-KgQ6Y-1iTwTbqvMVYkC2wtsLfozj2nuEH-UCUTMhT4olwVXeznlpq11alw_Wf0MmVCzWJ9ILy73WlQCwHYEKwA0UB0D6GrxaP-5n5fSyMGVGyryNTIlSXv5y_E8hOOs6NaFnr5DLXJPDOH1NwsaMPeAzMdGVAs1OIizUyg2PnQ5B5b7lEGS_MTL8P0GSKk0F6D__XAmCRfqJANZAUj_v98rRRouPyaiGJuh3RpvYKPipvQEhnmqweQtOMxLeLiZyUJMSx=w1017-h510-no
 :hp-tags: blackGirlsCode, web design, Bootsrap
 
-I am pleased to announce the redesign of the link:blackgirlscode.github.io[GC(2)] site!  This is something long overdue and I am very excited about it's development.  It is almost night and day to the previous version and it is a testament of my growth as a developer.  When I first took on this project, it took about three weeks and riddled with errors.  I kept seeing this "clearfix" class thrown about and had no clue as to it's purpose; so I just deleted it.  (Happy to say now I know whats it's for.)  Plus, I used a template that was poor in design and poorly documented.
+=== I am pleased to announce the redesign of the link:blackgirlscode.github.io[GC(2)] site!  
+This is something long overdue and I am very excited about it's development.  It is almost night and day to the previous version and it is a testament of my growth as a developer.  When I first took on this project, it took about three weeks and riddled with errors.  I kept seeing this "clearfix" class thrown about and had no clue as to it's purpose; so I just deleted it.  (Happy to say now I know whats it's for.)  Plus, I used a template that was poor in design and poorly documented.
+
+Features are included that, before, I did not have the know-how to complete. Simple things like an image carousel, a fixed/collapsed navigation bar, some cool transitions, member profiles and testimonials, etc.   
 
 .An Actual Testimonial
 [[testimonial]]
 image::https://lh3.googleusercontent.com/NZLSWqjTRJDAghvmYXQHyMVnu1zTtdY304oB5P4wkrOlZ3LtLfr0wrHWYgfw961wHr_hoaTmmqsObD_NizfNmBEOqJMQLUPZ27y-9p2aITf4D9BtD--VdHhC01v_wY7lf4i1s3CbGyDJMgny1pNeiLt3W3KgsYqKbPiVF9Snmp6cU_9gA8BuE9nUb0FYuZV97nSu1DThvOl9xlxF_rpoosXt8pQJDT8F9-ujT10MvdbvsFFurlfLQ5o5F6W4EaeuPizAGzQrQD_2E-Dws2bpkmn0i76nhI9pCwpQfTAVo54t7zeTCRtfzSl9PMwdVKHg1ZqMkN8Gi5SHneVqyJjeTvMHUjpCaAbkPZQlGBEg5VKk764c1VliFoBK7C9gs1fkI8fvft6G0AnVkeFnTraUFjDgQwX_7zFp5WE3h8yX3UeKpbrlAD7zjM5tE6isonpeMMUl9IOSTpCtlo1X32IFPWTznEEv89EH4N-_-Mm_YqoWNQxhca8maqJBudel4owiwQ4RbvvBa6W9lUIGPC9FJ-KWwJij4acG6Fyh2oLiBJMXZd-x1MY-8Cn0YJ3f_8b00qhy=w551-h599-no, [link="http://blackgirlscode.github.io"]
 
+
 Using Bootstrap was neccesary to build, as well as a few jQuery Plugins.  I feel at times, both are used when a simple boilerplate and Vanilla Javascript would suffice.  I myself felt lazy using it to develop a website;  but it was neccessary to achieve the big picture results I see for the organization.  Plus time-savings had to to be considered; this week I am getting my hands dirty test-driving my link:https:codeschool.com[CodeSchool] subscription that was gifted for Christmas.  
 iThere still are things I'd like to add such as a schedule of events and the curriculum section for members, but at least for now it is not such an e̶m̶b̶a̶r̶r̶a̶s̶m̶e̶n̶t̶ eye-sore. 
-
-Features are included that, before, I did not have the know-how to complete. Simple things like an image carousel, a fixed/collapsed navigation bar, some cool transitions, member profiles and testimonials, etc.   
 
 More to come on this, but so far, so good!
