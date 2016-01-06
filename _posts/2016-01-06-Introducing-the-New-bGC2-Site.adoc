@@ -1,0 +1,13 @@
+= Introducing the New bGC(2) Site
+:hp-image: https://lh3.googleusercontent.com/kHS0i7IG5jOlmhA0vWs1MCCoJ_uZblRpIfVLPVqojDhwuAhlf_Q7Q-Yu3mwT5ojpDQr_2M0YJ7MirCWkNccAeekwetEsXV7hrHMTp22YYPdZE4tvltpzal5fnu0NygITR_mvEf8O58jNqgklSthDKFONm34e9_pQLmTx-nFH3Rhc1XAJwl58XXqo0tphhO3AOWrQhZuFNqtrCxsRMDOczsW0uGN8DOofGGPzMspaBPbP87KENZXSO9Jo9dmF6c7OfjrVLoLcEFPT_RhgSECLXdl9NyEypWPZG8jbmn76KxLFySB5t79ZABYJduhbVB95rbi-uOeNJfu_RTJGjh8QaYErMajyNcaQLjS-a8e1tkZi8DZaFF43334yw0voh2PPQDeFLnQ-G15nvTt881gFMK4Kgiedtviz9c2sGYLTi55t63Ir_BC4C8VMJWq-WwMnYnWyeX0U7gUHVHdxgqZ3H4CwbRNFvNOaE4kabTvfwOkhnHLR-F8LhgxxB8zlXEcZMjHqn-Pz6V4wbyU1ylFGLq_R-_jPrSRCVFAINhDLqfMrySWjvsaLrPyfRP6dSUw526cY=w1307-h657-no
+:hp-tags: blackGirlsCode, web design, Bootsrap
+
+I am pleased to announce the redesign of the link:blackgirlscode.github.io[GC(2)] site!  This is something long overdue and I am very excited about it's development.  It is almost night and day to the previous version and it is a testament of my growth as a developer.  When I first took on this project, it took about three weeks and riddled with errors.  I kept seeing this "clearfix" class thrown about and had no clue as to it's purpose; so I just deleted it.  (Happy to say now I know whats it's for.)  Plus, I used a template that was poor in design and poorly documented.
+
+Using Bootstrap was neccesary to build, as well as a few jQuery Plugins.  I feel at times, both are used when a simple boilerplate and Vanilla Javascript would suffice.  I myself felt lazy using it to develop a website;  but it was neccessary to achieve the big picture results I see for the organization.  Plus time-savings had to to be considered; this week I am getting my hands dirty test-driving my link:https:codeschool.com[CodeSchool] subscription that was gifted for Christmas.  
+
+There still are things I'd like to add such as a schedule of events and the curriculum section for members, but at least for now it is not such an e̶m̶b̶a̶r̶r̶a̶s̶m̶e̶n̶t̶ eye-sore. 
+
+Features are included that, before, I did not have the know-how to complete. Simple things like an image carousel, a fixed/collapsed navigation bar, some cool transitions, member profiles and testimonials, etc.   
+
+More to come on this, but so far, so good!
