@@ -1,0 +1,18 @@
+= bGC(2) is Brand New
+:hp-image: https://lh3.googleusercontent.com/KPzSutUvsP8_V3A7F5eP-BB7dYAWpKyKfBHXiwRH8ntQaMKrjqWewXAjW-riM93n1xtJOGyiQR4Ssqg3diLg2WtA_sI3mvn4DvyujVVz1-WcpD-7IVN8h9PiXrzan4APp1UCLFPdFSAOXPY5qBazcs5usUu-zoTInnXabMCdauOyFWXxUPTiyrezGXenOVF77gmSmQg5ExazzfSU5o752bphlZVfzks34SNvwV71EeWnrrfaf9h20PatUd7uQKuPOcAkHFDwRFEqn1_mLJgdDHAm57Hcb8-1P4CZbB-3XZ1jHpuLllxs-uMrPWtkRB-KgQ6Y-1iTwTbqvMVYkC2wtsLfozj2nuEH-UCUTMhT4olwVXeznlpq11alw_Wf0MmVCzWJ9ILy73WlQCwHYEKwA0UB0D6GrxaP-5n5fSyMGVGyryNTIlSXv5y_E8hOOs6NaFnr5DLXJPDOH1NwsaMPeAzMdGVAs1OIizUyg2PnQ5B5b7lEGS_MTL8P0GSKk0F6D__XAmCRfqJANZAUj_v98rRRouPyaiGJuh3RpvYKPipvQEhnmqweQtOMxLeLiZyUJMSx=w1017-h510-no
+:hp-tags: blackGirlsCode, web design, Bootsrap
+
+
+This is something long overdue and I am very excited about it's design and the possibilities.  It is almost night and day to the previous version and it is a testament of my growth as a developer.  When I first took on this project, it took about three weeks and riddled with errors.  I kept seeing this "clearfix" class thrown about and had no clue as to it's purpose; so I just deleted it.  (Happy to say now I know whats it's for.)  Plus, I used a template that was poor in design and poorly documented.
+
+Features are included that, before, I did not have the know-how to complete. Simple things like an image carousel, a fixed/collapsed navigation bar, some cool transitions, member profiles and testimonials, etc.   
+
+.Home Page Carousel
+image::https://lh3.googleusercontent.com/KTw2YYijYBs8YRk8OyFhrgrZrrIwLSB0JS8UeJPtCYb_wg3kPa8plmXIR-D1dLzqSv6PsBOaUw1HSh1Ms37wNVq6cPsDNpmC_ajwHCTMBOqU2a8IVbiLsNu5T5czfKr3xXCO9jsGd7xXeeN8xZbEbXMxiex9KXjwuVYjUO7zY5B-xLkmwxOG5oUFJ69_ej3825lzWEwqxz8kgz1wvCU5lL4l1HooUil5XLlstNBPmLRdn8JzlyuFnQ2g1Y8YHd8Bj4SF4CFxEKWwpG-OzM5UCDmNyifPnv5fGnMKWKrezwiiE9CHwLihoPDR_EkWJfVUVE6iO8OWpffCdiJYZVs_LwJyyUQZVzI_RJQT4EmtT3SenuqmBt8dzt0KMfrs8RvsPnz66YzCs8XmdKghq8fquLOGCAKBG3NtYXXyfrDtb0H3SJa9llsNsUsvmHKPxVTNqRTAZ9OzlOBN7SSAgQNufhm56yuZ5IRdBXv3OW_OjnTxO3JEA_JdanEA1YhZl68Wbq0y_V8DuW2HsljbEc1fE5ASqKPJ_k06o2hvT9EhDiU6ujdukrHY4zSmg9P10K3k-RSZ=w1307-h657-no[HomePage]
+
+
+Using Bootstrap was  to build, as well as a few jQuery Plugins.  I feel at times, both are used when a simple boilerplate and Vanilla Javascript would suffice.  I myself felt lazy using it to develop a website;  but it was neccessary to achieve the big picture results I see for the organization.  Plus time-savings had to to be considered; this week I am getting my hands dirty test-driving my link:https:codeschool.com[CodeSchool] subscription that was gifted for Christmas.  
+
+There still are things I'd like to add such as a schedule of events and the curriculum section for members, but at least for now it is not such an e̶m̶b̶a̶r̶r̶a̶s̶m̶e̶n̶t̶ eye-sore. 
+
+More to come on this, but so far, so good
